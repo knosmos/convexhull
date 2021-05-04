@@ -45,8 +45,22 @@ function mousePressed(){
     }   
 }
 
+function windowResized(){
+    width = window.innerWidth-20;
+    height = window.innerHeight-20-180;
+    resizeCanvas(width,height);
+}
+
 function draw(){
     background(bgColor);
+    /* Draw help text if no points have been created */
+    if (points.length == 0){
+        textSize(50);
+        noStroke();
+        fill(lightOutlineColor);
+        text("click to add points",width/2,height/2);
+        textSize(25);
+    }
     /* Draw processing order, just because it looks cool */
     stroke(lightOutlineColor);
     for (let i=0; i<points.length-1; i++){
