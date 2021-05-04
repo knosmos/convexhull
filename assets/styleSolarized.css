@@ -1,0 +1,48 @@
+html,body{
+    margin:0;
+    padding:0;
+}
+
+@font-face{
+    font-family: "compModern";
+    src: url("compModern.ttf");
+}
+
+body{
+    font-family: "compModern";
+    background-color: #fdf6e3;
+}
+
+#text{
+    /*position:fixed;
+    top:0;
+    left:0;*/
+    padding:20px;
+    padding-bottom:0px;
+    box-sizing: border-box;
+    height:180px;
+}
+
+h1, h2, h3, h4{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+h1{
+    font-size: 30pt;
+    color:#073642;
+}
+
+h2{
+    font-size: 20pt;
+    color:#d33682;
+}
+
+button{
+    font-family: "compModern";
+    border: 2px solid #073642;
+    color: #073642;
+    background-color: transparent;
+    font-size: 20pt;
+    font-weight: 600;
+}
